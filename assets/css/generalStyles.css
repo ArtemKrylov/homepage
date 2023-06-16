@@ -11,11 +11,19 @@ body {
 
   --primary-text-color: #181820;
   --secondary-text-color: #5c5c62;
+  --light-text-color: #cacaca;
   --durability-text-color: #6a737d9c;
   --icon-color: #6a737d;
   --border-color: #ff9a0045;
   --text-decoration-color: #ff9a00;
   --accent-color: #26c281;
+}
+
+body.darkMode {
+  background-color: #181820;
+  --primary-text-color: #da9fff;
+  --secondary-text-color: #ffffff;
+  --durability-text-color: #bbe7fb9c;
 }
 
 a {
@@ -63,7 +71,31 @@ ul {
   justify-content: space-between;
 }
 
+.darkModeToggler {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  color: var(--primary-text-color);
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
+.darkModeToggler:hover,
+.darkModeToggler:focus {
+  color: var(--accent-color);
+}
+
+.darkModeToggler:active {
+  transform: translate(1px, 2px);
+}
+
 .resume {
+  position: relative;
   margin: 50px auto;
   border: 1px solid #f5f5f5;
   box-shadow: 1px 1px 7px 7px #f5f5f5;
