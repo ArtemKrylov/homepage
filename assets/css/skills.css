@@ -4,7 +4,23 @@
   margin-bottom: 15px;
 }
 
-.skills__text {
+.skills__list {
+  padding-left: 30px;
   color: var(--secondary-text-color);
   text-align: justify;
+}
+
+.skills__item {
+  position: relative;
+}
+
+.skills__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: -30px;
+  width: 16px;
+  height: 16px;
+  background: center/cover no-repeat url("/assets/data/svg/starIcon.svg");
 }
