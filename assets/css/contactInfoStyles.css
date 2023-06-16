@@ -14,6 +14,7 @@
 .contact-info__sub-header {
   color: var(--secondary-text-color);
   margin-bottom: 30px;
+  transition: color 250ms ease-in-out;
 }
 
 .contact-info__block {

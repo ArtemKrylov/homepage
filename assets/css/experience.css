@@ -32,8 +32,14 @@
 .experiences__company-project-role {
   color: var(--durability-text-color);
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 15px;
+}
+
+.experiences__projectList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .experiences__company-project-name {
