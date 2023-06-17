@@ -21,11 +21,450 @@
   <body>
     <main>
       <div class="resume">
-        <!-- including partials -->
-        <include src="./assets/partials/contactInfo.html"></include>
-        <include src="./assets/partials/intro.html"></include>
-        <include src="./assets/partials/skills.html"></include>
-        <include src="./assets/partials/experiences.html"></include>
+        <div class="container">
+          <section class="resume__block">
+            <h1 class="contact-info__header">Artem Krylov</h1>
+            <h3 class="contact-info__sub-header">
+              FrontEnd / FullStack Developer
+            </h3>
+
+            <button
+              type="button"
+              class="darkModeToggler"
+              onclick="toggleDarkMode(event)"
+            >
+              <i
+                class="fa-solid fa-moon fa-xl"
+                id="moonIconJS"
+                style="color: #26c281"
+              ></i>
+              <i
+                class="fa-solid fa-sun fa-lg visually-hidden"
+                id="sunIconJS"
+                style="color: #26c281"
+              ></i>
+              <span>Dark mode</span>
+            </button>
+
+            <div class="contact_info_container fh">
+              <ul class="contact-info__block">
+                <li>
+                  <div aria-label="birth date" class="contact-info__item">
+                    <div class="contact-info__item-icon-wrapper">
+                      <i
+                        class="fa-regular fa-calendar contact-info__item-icon"
+                      ></i>
+                    </div>
+                    <p>22.09.1994</p>
+                  </div>
+                </li>
+                <li>
+                  <a
+                    aria-label="my home town"
+                    href="https://goo.gl/maps/XcSp77c1xqCEtS1TA"
+                    rel="location"
+                    class="contact-info__item"
+                    target="_blank"
+                  >
+                    <div class="contact-info__item-icon-wrapper">
+                      <i
+                        class="fa-solid fa-location-dot contact-info__item-icon"
+                      ></i>
+                    </div>
+                    <p>Zaporizhzhia, Ukraine</p>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/krylov-artem/"
+                    rel="linkedin profile"
+                    aria-label="my work accaunt"
+                    class="contact-info__item"
+                    target="_blank"
+                  >
+                    <div class="contact-info__item-icon-wrapper">
+                      <i
+                        class="fa-brands fa-linkedin contact-info__item-icon"
+                      ></i>
+                    </div>
+                    <p>krylov-artem</p>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="contact-info__block contact-info__block--center">
+                <img
+                  class="contact-info__avatar"
+                  src="assets/data/img/avatar.jpg"
+                  alt="Avatar"
+                />
+              </div>
+
+              <ul class="contact-info__block">
+                <li>
+                  <a
+                    href="mailto:krylovartem1994@gmail.com"
+                    rel="email"
+                    aria-label="message me on my work"
+                    class="contact-info__item"
+                    target="_blank"
+                  >
+                    <div class="contact-info__item-icon-wrapper">
+                      <i
+                        class="fa-solid fa-envelope contact-info__item-icon"
+                      ></i>
+                    </div>
+                    <p>krylovartem1994@gmail.com</p>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="tel:+380686545462"
+                    rel="contact phone"
+                    class="contact-info__item"
+                    aria-label=""
+                    target="_blank"
+                  >
+                    <div class="contact-info__item-icon-wrapper">
+                      <i class="fa-solid fa-mobile contact-info__item-icon"></i>
+                    </div>
+                    <p>+38 068 654 54 62</p>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/_artem.krylov_/"
+                    aria-label="fell free to contact me "
+                    rel="instagram link"
+                    class="contact-info__item"
+                    target="_blank"
+                  >
+                    <div class="contact-info__item-icon-wrapper">
+                      <i
+                        class="fa-brands fa-instagram contact-info__item-icon"
+                      ></i>
+                    </div>
+                    <p>_artem.krylov_</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <div class="container">
+          <div class="resume__block">
+            <section class="intro">
+              <h3 class="visually-hidden">About</h3>
+              <div class="intro__icon-wrapper">
+                <i
+                  class="fa-solid fa-quote-left fa-lg"
+                  style="color: #ff9a00"
+                ></i>
+              </div>
+              <p class="intro_text">
+                Responsible, creative, and up-to-date Frontend Developer for
+                your productive and user-friendly applications.<br /><br />My
+                values are:<br />✅ working for the result,<br />✅ agile
+                teamwork, <br />✅ empathy,<br />✅ and an open-minded approach.
+              </p>
+            </section>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="resume__block">
+            <section class="skills">
+              <h3 class="skills__header">Skills</h3>
+              <ul class="skills__list">
+                <li class="skills__item">React, Material UI / Chakra UI</li>
+                <li class="skills__item">JavaScript ES6+, OOP, async</li>
+                <li class="skills__item">TypeScript</li>
+                <li class="skills__item">Redux, Redux Toolkit, RTK Query</li>
+                <li class="skills__item">SCSS / SASS, CSS3</li>
+                <li class="skills__item">semantic HTML5, BEM</li>
+                <li class="skills__item">Git, GitHub, Webpack, Parcel</li>
+                <li class="skills__item">Node.js, Express</li>
+                <li class="skills__item">PostgreSQL</li>
+                <li class="skills__item">
+                  Responsive and Accessable Web Design
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="resume__block">
+            <div class="main-info fh">
+              <section class="experiences">
+                <h3 class="experiences__header">Experience</h3>
+                <ul class="experiences__companyList">
+                  <li class="experiences__company">
+                    <div class="experiences__company-header">
+                      <span class="experiences__company-header-durability"
+                        >since May 2023</span
+                      >
+                      <h3 class="experiences__company-header-name">
+                        IT_Volunteers
+                      </h3>
+                    </div>
+
+                    <div class="experiences__company-project">
+                      <span class="experiences__company-project-role"
+                        >FrontEnd Developer</span
+                      >
+                      <h3 class="experiences__company-project-name">
+                        IT_Volunteers official site
+                      </h3>
+                      <ul class="experiences__company-project-responsibilities">
+                        <li>still in progress</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="experiences__company">
+                    <div class="experiences__company-header">
+                      <span class="experiences__company-header-durability"
+                        >September 2022 - May 2023</span
+                      >
+                      <h3 class="experiences__company-header-name">
+                        GoIT Team Projects
+                      </h3>
+                    </div>
+
+                    <div class="experiences__company-project">
+                      <span class="experiences__company-project-role"
+                        >FrontEnd Developer</span
+                      >
+                      <ul class="experiences__projectList">
+                        <li>
+                          <h3 class="experiences__company-project-name">
+                            ⌚ Goose truck
+                          </h3>
+                          <ul
+                            class="experiences__company-project-responsibilities"
+                          >
+                            <li>
+                              Team project (my role - developer). GooseTrack is
+                              an all-in-one productivity tool that helps you
+                              stay on top of your tasks, events, and deadlines.
+                              Say goodbye to scattered to-do lists and hello to
+                              streamlined productivity with GooseTrack.
+                            </li>
+                            <li>
+                              My contribution: developed redux, authSlice,
+                              tasksSlice, state, API requests file, dark mode
+                              switcher, components chosenDay and chosenMonth.
+                            </li>
+                            <li>
+                              👨🏻‍💻 <b>Technology stack: </b>React, Material UI,
+                              Redux, Redux Toolkit, redux async thunk,
+                              redux-persist, react-router-dom, private routes,
+                              Javascript, ES6+, async Javascript (async-await),
+                              REST APIs (using API -
+                              https://goose-tracker-backend.p.goit.global/api-docs/),
+                              DOM, localstorage, pagination, SCSS, responsive
+                              layout, responsive and lazy loaded images,
+                              mobile-first approach, HTML5, BEM methodology,
+                              Webpack, Figma
+                            </li>
+                            <li>
+                              <a
+                                href="https://svitlanahonchar.github.io/Goose-Track_Work-Smart/"
+                                ><b>Link</b></a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://github.com/SvitlanaHonchar/Goose-Track_Work-Smart"
+                                ><b>GitHub repository:</b>
+                                https://github.com/SvitlanaHonchar/Goose-Track_Work-Smart</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h3 class="experiences__company-project-name">
+                            🍧 Ice cream site
+                          </h3>
+                          <ul
+                            class="experiences__company-project-responsibilities"
+                          >
+                            <li>
+                              Team project (my role - developer). Ice cream site
+                              project using Figma draft.
+                            </li>
+                            <li>
+                              👨🏻‍💻 <b>Technology stack: </b>SCSS, responsive
+                              layout, responsive and lazy loaded images,
+                              mobile-first approach, HTML5, BEM methodology,
+                              Parcel, Figma
+                            </li>
+                            <li>
+                              <a
+                                href="https://annakilchytska.github.io/team-work-smart-not-hard/"
+                                ><b>Link</b></a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://github.com/AnnaKilchytska/team-work-smart-not-hard"
+                                ><b>GitHub repository:</b>
+                                https://github.com/AnnaKilchytska/team-work-smart-not-hard</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="experiences__company">
+                    <div class="experiences__company-header">
+                      <span class="experiences__company-header-durability"
+                        >since 2022</span
+                      >
+                      <h3 class="experiences__company-header-name">
+                        Pet projects
+                      </h3>
+                    </div>
+
+                    <div class="experiences__company-project">
+                      <span class="experiences__company-project-role"
+                        >FrontEnd Developer</span
+                      >
+                      <ul class="experiences__projectList">
+                        <li>
+                          <h3 class="experiences__company-project-name">
+                            🍿 Movie Market
+                          </h3>
+                          <ul
+                            class="experiences__company-project-responsibilities"
+                          >
+                            <li>
+                              Personal project. Movie search site (using TMDB
+                              API) with aesthetic design, registration, and
+                              movie saving to firebase.
+                            </li>
+                            <li>
+                              👨🏻‍💻 <b>Technology stack: </b>React, React Hooks,
+                              react-router-dom, react-pagination,
+                              styled-components, REST APIs, firebase-auth,
+                              firestore, SCSS, responsive layout, responsive and
+                              lazy loaded images, mobile-first approach,
+                              BEM-methodology
+                            </li>
+                            <li>
+                              <a
+                                href="https://artemkrylov.github.io/movie_market/"
+                                ><b>Link</b></a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://github.com/ArtemKrylov/movie_market"
+                                ><b>GitHub repository:</b>
+                                https://github.com/ArtemKrylov/movie_market</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h3 class="experiences__company-project-name">
+                            📖 Immersive Phonebook
+                          </h3>
+                          <ul
+                            class="experiences__company-project-responsibilities"
+                          >
+                            <li>
+                              Personal project. Phonebook for
+                              adding/deleting/storing contacts with a responsive
+                              mobile-first layout and vivid design.
+                            </li>
+                            <li>
+                              👨🏻‍💻 <b>Technology stack: </b>Typescript, Chakra UI,
+                              Redux, Redux Toolkit, redux-thunk, React, React
+                              Hooks, react-router-dom, private routes,
+                              styled-components, REST APIs (using mockapi.io),
+                              SCSS, responsive layout, responsive and lazy
+                              loaded images, mobile-first approach,
+                              BEM-methodology
+                            </li>
+                            <li>
+                              <a
+                                href="https://artemkrylov.github.io/immersive-phonebook/"
+                                ><b>Link</b></a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://github.com/ArtemKrylov/immersive-phonebook"
+                                ><b>GitHub repository:</b>
+                                https://github.com/ArtemKrylov/immersive-phonebook</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+
+              <div class="additional-info fv">
+                <div class="additional-info fv">
+                  <section class="additional-info__education">
+                    <h3 class="additional-info__education-header">Education</h3>
+                    <ul class="additional-info__educationList">
+                      <li class="additional-info__education-university">
+                        <span
+                          class="additional-info__education-university-durability"
+                          >September 2022 - May 2023</span
+                        >
+                        <h3
+                          class="additional-info__education-university-speciality"
+                        >
+                          FrontEnd Development Course
+                        </h3>
+                        <p class="additional-info__education-university-name">
+                          GoIT - start your career in IT
+                        </p>
+                      </li>
+                      <li class="additional-info__education-university">
+                        <span
+                          class="additional-info__education-university-durability"
+                          >2011 - 2017</span
+                        >
+                        <h3
+                          class="additional-info__education-university-speciality"
+                        >
+                          Medicine
+                        </h3>
+                        <p class="additional-info__education-university-name">
+                          Zaporizhzhya State Medical University
+                        </p>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="additional-info__languages">
+                    <h3 class="additional-info__languages-header">Languages</h3>
+                    <ul>
+                      <li>
+                        <p class="additional-info__languages-item">
+                          Ukrainian (native)
+                        </p>
+                      </li>
+                      <li>
+                        <p class="additional-info__languages-item">
+                          English (full professional proficiency)
+                        </p>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
