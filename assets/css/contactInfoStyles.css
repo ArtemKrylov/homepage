@@ -14,7 +14,8 @@
 .contact-info__sub-header {
   color: var(--secondary-text-color);
   margin-bottom: 30px;
-  transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out, transform 250ms ease-in-out;
+  animation: pulseTitle 3000ms ease-in-out infinite none;
 }
 
 .contact-info__block {
@@ -61,4 +62,9 @@
   object-fit: cover;
   border: 3px solid;
   border-color: var(--text-decoration-color);
+}
+
+.contact-info__avatar:hover,
+.contact-info__avatar:focus {
+  animation: rotate3D 2000ms ease-in-out 1;
 }
