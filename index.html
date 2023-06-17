@@ -2,9 +2,34 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- adding custom fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kablammo&family=Lora:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/eee86b9e3e.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Résumé</title>
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <main>
+      <div class="resume">
+        <!-- including partials -->
+        <include src="./assets/partials/contactInfo.html"></include>
+        <include src="./assets/partials/intro.html"></include>
+        <include src="./assets/partials/skills.html"></include>
+        <include src="./assets/partials/experiences.html"></include>
+      </div>
+    </main>
+
+    <script src="./assets/js/include.js"></script>
+    <script src="./assets/js/toggleDarkMode.js"></script>
   </body>
 </html>
