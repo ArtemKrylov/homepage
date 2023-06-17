@@ -4,7 +4,7 @@ My very own personal website. Basically this is just a résumé.
 
 🤩 Features:
 
-1. Convenient structure - the code (both HTML and CSS) is split into small semantic parts for comfort use and maintenance.
+1. Convenient structure - the CSS code is split into small semantic parts for comfort use and maintenance.
 2. Accessibility -
    ⭐ Interactive elements like links have
    ⭐ area-label and rel attributes;
