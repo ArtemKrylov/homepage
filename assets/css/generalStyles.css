@@ -6,7 +6,8 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-family: "Dancing Script", cursive;
   line-height: 1.5;
 
   cursor: url("/assets/data/svg/cursorIcon.svg"), auto;
@@ -42,6 +43,15 @@ a:focus {
 
 ul {
   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora", serif;
 }
 
 .visually-hidden {
@@ -83,6 +93,7 @@ ul {
   border: none;
   color: var(--primary-text-color);
   background-color: transparent;
+  font-family: "Kablammo", cursive;
   cursor: pointer;
   transition: color 250ms ease-in-out, transform 250ms ease-in-out;
 }
